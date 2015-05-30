@@ -43,19 +43,19 @@ function constructOnes(n){
 	return ret;
 }
 
-function processFP(sgn, exp, mant, mid, e_bits, m_bits){
+function processFP(sgn, exp, mant_s, mid, e_bits, m_bits){
 	
-	
+	var mant = parseInt(mant_s);
 	if(exp.toString() == constructOnes(e_bits)){
 		if(mant == 0){
 			return "Infinity";
-		}else{
+		}else{ 
 			return "Not a Number";
 		}
 	}else{
+		alert('hi');
 		var base = 1;
 		var p = b2_to_b10(exp) - mid;
-		var mant_s = mant.toString();
 		var res = 0;
 		if(exp == 0){
 			base = 0;
@@ -64,8 +64,10 @@ function processFP(sgn, exp, mant, mid, e_bits, m_bits){
 		var i = 1;
 		while(i <= m_bits){
 			res += parseInt(mant_s.substring(i-1, i))*Math.pow(2, p - i);
+			alert('stuff2 ' + res);
 			i++;
 		}
+		
 		if(sgn == 1){
 			res = -1*res;
 		}
@@ -91,9 +93,9 @@ function submitData(){
 		}else{
 			var sgn = parseInt(c.substring(0, 1));
 			var exp = parseInt(c.substring(1, a + 1));
-			var mant = parseInt(c.substring(a + 1, a + b + 1));
+			var mant_s = c.substring(a + 1, a + b + 1);
 			var mid = Math.pow(2, b - 1) - 1;
-			displayData(processFP(sgn, exp, mant, mid, a, b));
+			displayData(processFP(sgn, exp, mant_s, mid, a, b));
 		}
 
 	}
