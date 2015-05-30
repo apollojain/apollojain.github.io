@@ -85,15 +85,16 @@ function submitData(){
 	if(!(isInt(a)) || !(isInt(b)) || a < 0 || b < 0 || !(isInt(parseInt(c))) || !(is_binary(parseInt(c)))){
 		displayData("Something seems incorrect. You may have accidentally entered something that isn't a number or something that is negative. Try again.");
 	}else{
-
-		// if(!(c.toString().split("").length == (a + b + 1))){
-		// 	displayData("Your floating point number length does not match the values you have given for your exponent and mantissa bits");
-		// }else{
+		var nan = c.split("").length;
+		if(nan != (a + b + 1)){
+			displayData("Your floating point number length does not match the values you have given for your exponent and mantissa bits");
+		}else{
 			var sgn = parseInt(c.substring(0, 1));
 			var exp = parseInt(c.substring(1, a + 1));
 			var mant = parseInt(c.substring(a + 1, a + b + 1));
 			var mid = Math.pow(2, b - 1) - 1;
 			displayData(processFP(sgn, exp, mant, mid, a, b));
+		}
 
 	}
 
