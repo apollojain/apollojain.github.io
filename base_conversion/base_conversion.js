@@ -413,7 +413,11 @@ function submitData(){
 	var id3 = document.getElementById('id3').innerHTML;
 	var number = document.getElementById('t1').value;
 	if(id1 == "" || id2 == "" || id3 == ""){
-		alert("Please pick a Conversion Type and a Base Type.");
+		sweetAlert({
+			title: "Oops!", 
+			text: "Please pick a Conversion Type and a Base Type.", 
+			type: "error"
+		});
 	}else if(id2 == "base_16"){
 		if(id1 == 'unsigned' && id3 == "base_2"){
 			displayNumber(unsigned_base_16_to_base_2(number));
@@ -439,7 +443,11 @@ function submitData(){
 		else if(id1 == 'twos_complement' && id3 == "base_10"){
 			displayNumber(twos_complement_base_16_to_base_10(number));
 		}else{
-			alert('It seems there is some error. Make sure you have everything correctly selected.');
+			sweetAlert({
+				title: "Oops!", 
+				text: "It seems there is some error. Make sure you have everything correctly selected.", 
+				type: "error"
+			});
 		}
 	}else{
 		number = parseInt(document.getElementById('t1').value);
@@ -496,7 +504,11 @@ function submitData(){
 
 			displayNumber(twos_complement_base_10_to_base_16(number));
 		}else{
-			alert('It seems there is some error. Make sure you have everything correctly selected.');
+			sweetAlert({
+				title: "Oops!", 
+				text: "It seems there is some error. Make sure you have everything correctly selected.", 
+				type: "error"
+			});
 		}
 	}
 	
