@@ -5,7 +5,7 @@ function change_hidden_h1(a, b) {
 }
 
 function displayNumber(i){
-	alert(i);
+	sweetAlert(i);
 }
 
 function hex2binary_digit(ch){

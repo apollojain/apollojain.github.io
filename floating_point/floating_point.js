@@ -30,7 +30,7 @@ function b2_to_b10(number){
 
 
 function displayData(str){
-	alert(str);
+	sweetAlert(str);
 }
 
 function constructOnes(n){
@@ -53,7 +53,6 @@ function processFP(sgn, exp, mant_s, mid, e_bits, m_bits){
 			return "Not a Number";
 		}
 	}else{
-		alert('hi');
 		var base = 1;
 		var p = b2_to_b10(exp) - mid;
 		var res = 0;
@@ -64,7 +63,6 @@ function processFP(sgn, exp, mant_s, mid, e_bits, m_bits){
 		var i = 1;
 		while(i <= m_bits){
 			res += parseInt(mant_s.substring(i-1, i))*Math.pow(2, p - i);
-			alert('stuff2 ' + res);
 			i++;
 		}
 		
