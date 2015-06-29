@@ -21,13 +21,15 @@ function submitInfo(){
 	var score = 0;
 
 
-	var grin = "<img src='grin.png' height='100px' width='100px' alt='grin'>";
+	// var grin = "<img src='grin.png' height='100px' width='100px' alt='grin'>";
+	var grin = "<h5 style='color: #006633; font-weight: bold;'>Easy</h5>"
 
-	var happy = "<img src='happy.png' height='100px' width='100px' alt='happy'>";
+	// var happy = "<img src='happy.png' height='100px' width='100px' alt='happy'>";
+	var happy = "<h5 style='color: #CC9900; font-weight: bold;'>Manageable</h5>";
 
-	var unhappy = "<img src='unhappy.jpeg' height='120px' width='120px' alt='unhappy'>";
-
-	var dead= "<img src='dead.jpeg' height='120px' width='140px' alt='dead'>";
+	// var unhappy = "<img src='unhappy.jpeg' height='120px' width='120px' alt='unhappy'>";
+	var unhappy = "<h5 style='color: #880000; font-weight: bold;'>Challenging</h5>";
+	var dead= "<h5 style='color: #300000; font-weight: bold;'>Impossible</h5>";
 
 	if(units_grade != '' && !isNaN(units_grade) && units_pnp != '' && !isNaN(units_pnp) && technicals != '' && !isNaN(technicals) && early != '' && !isNaN(early) && late != '' && !isNaN(late) && gap_length != '' && !isNaN(gap_length) && straight != '' && !isNaN(straight) && work != '' && !isNaN(work)){
 
