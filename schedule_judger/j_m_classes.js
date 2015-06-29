@@ -178,7 +178,6 @@ function submitInfo(){
 			num_dead += 1;
 		}
 		
-		alert(num_dead);
 		if(score < 1.4){
 			document.getElementById("final_res").innerHTML=grin;
 		}
@@ -194,7 +193,6 @@ function submitInfo(){
 		}
 
 		if(num_dead >2){
-			alert(num_dead)
 			document.getElementById("final_res").innerHTML=dead;
 		}
 	}else{
