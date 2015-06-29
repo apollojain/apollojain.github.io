@@ -4,10 +4,11 @@
 <head>
 
 
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
 <script src="j_m_classes.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 	// var units_grade = document.getElementById('units_grade').value;
 	// var units_pnp = document.getElementById('units_pnp').value;
@@ -34,110 +35,94 @@
 	});
 
 </script>
-<style>
-body{
-	background-color: #99FF99;
-}
-h1, h2, h3{
-	font-family: 'Roboto Condensed', sans-serif;
-}
-#my_form{
-	padding-left: 50px; 
-	padding-top:10px;
-	background-color:#66CCFF;
-	padding-bottom:25px;
-}
-#results{
-	padding:20px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	position:relative;
-	width: 800px;
-	left: 100px;
-	border: 2px solid black;
-	background-color:white;
-}
-</style>
 <title>Judge My Classes</title>
 </head>
 
 <!-- apply angular app and controller to our body -->
 <body>
-	<div id="results">
+	<div id="results" class="container">
 		<h1>Results</h1>
-		<h3>Unit Count (Grade)</h3>
+		<h5>Unit Count (Graded):</h5>
 		<p>
 		<div id="units_grade_res"></div><br>
 		</p>
-		<h3>Unit Count (P/NP)</h3>
+		<h5>Unit Count (P/NP):</h5>
 		<p>
 		<div id="units_pnp_res"></div><br>
 		</p>
-		<h3>Technical Unit Count</h3>
+		<h5>Technical Unit Count:</h5>
 		<p>
 		<div id="technicals_res"></div><br>
 		</p>
-		<h3>Number of Early Classes</h3>
+		<h5>Number of Early Classes:</h5>
 		<p>
 		<div id="early_res"></div><br>
 		</p>
-		<h3>Number of Late Classes</h3>
+		<h5>Number of Late Classes:</h5>
 		<p>
 		<div id="late_res"></div><br>
 		</p>
-		<h3>Awkward Gaps</h3>
+		<h5>Awkward Gaps:</h5>
 		<p>
 		<div id="gap_length_res"></div><br>
 		</p>
-		<h3>Continuous Classes</h3>
+		<h5>Continuous Classes:</h5>
 		<p>
 		<div id="straight_res"></div><br>
 		</p>
-		<h3>Work and Other Activities</h3>
+		<h5>Work and Other Activities:</h5>
 		<p>
 		<div id="work_res"></div><br>
 		</p>
-		<h3>Overall Schedule</h3>
+		<h5>Overall Schedule:</h5>
 		<p>
 		<div id="final_res"></div><br>
 		</p>
-		<br>
-		<button id="back" class="pure-button">Back</button>
+		<button id="back" class="btn btn-default">Back</button>
+		<br><br>
 
 	</div>
-	<div id="my_form" >
+	<div id="my_form" class="container" >
 		<!-- <form class="pure-form pure-form-stacked"> -->
 <!-- 		    <fieldset> -->
 		        <h1>Judge My Classes</h1>
-
-		        <h3>How many units are you taking for a grade?</h3>
-		        <input id="units_grade" type="text" placeholder="Total Unit Count">
-		        <br>
-		        <h3>How many units are you taking P/NP?</h3>
-		        <input id="units_pnp" type="text" placeholder="Total Unit Count">
-		        <br>
-		        <h3>How many units of technical classes and heavy reading classes are you taking?</h3>
-		        <input id="technicals" type="text" placeholder="Technical Unit Count">
-				<br>
-		        <h3>How many days do your classes begin at or before 9am?</h3>
-		        <input id="early" type="text" placeholder="Days of Early Classes">
-				<br>
-		        <h3>How many days do your classes end at or after 7pm?<h3>
-		        <input id="late" type="text" placeholder="Days of Late Classes">
-		        <br>
-		        <h3>How many gaps do you have between classes in your schedule that are more than five hours in length?</h3>
-		        <input id="gap_length" type="text" placeholder="Number of Gaps">
-		        <br>
-		        <h3>How many times in your schedule do you have four or more hours straight of classes?</h3>
-		        <input id="straight" type="text" placeholder="Continuous Classes">
-		        <br>
-		        <h3>How many hours per week do you plan to dedicate to work and to other time-consuming activities (ex. sports and clubs)?</h3>
-		        <input id="work" type="text" placeholder="Work Hours">
-		        <br><br>
-		        <button id="submit" type="submit" onclick="submitInfo()" class="pure-button pure-button-primary">Submit</button>
-<!-- 		    </fieldset>
-		</form> -->
+		        <!-- <form> -->
+		        	<div class="form-group">
+				        <h5>How many units are you taking for a grade?</h5>
+				        <input id="units_grade" type="text" placeholder="Total Unit Count">
+			        </div>
+			        <div class="form-group">
+				        <h5>How many units are you taking P/NP?</h5>
+				        <input id="units_pnp" type="text" placeholder="Total Unit Count">
+			        </div>
+			        <div class="form-group">
+				        <h5>How many units of technical classes and heavy reading classes are you taking?</h5>
+				        <input id="technicals" type="text" placeholder="Technical Unit Count">
+					</div>
+					<div class="form-group">
+				        <h5>How many days do your classes begin at or before 9am?</h5>
+				        <input id="early" type="text" placeholder="Days of Early Classes">
+					</div>
+					<div class="form-group">
+				        <h5>How many days do your classes end at or after 7pm?</h5>
+				        <input id="late" type="text" placeholder="Days of Late Classes">
+			        </div>
+			        <div class="form-group">
+				        <h5>How many gaps do you have between classes in your schedule that are more than five hours in length?</h5>
+				        <input id="gap_length" type="text" placeholder="Number of Gaps">
+			        </div>
+			        <div class="form-group">
+				        <h5>How many times in your schedule do you have four or more hours straight of classes?</h5>
+				        <input id="straight" type="text" placeholder="Continuous Classes">
+			        </div>
+			        <div class="form-group">
+				        <h5>How many hours per week do you plan to dedicate to work and to other time-consuming activities (ex. sports and clubs)?</h5>
+				        <input id="work" type="text" placeholder="Work Hours">
+			        </div>
+			        <button id="submit" type="submit" onclick="submitInfo()" class="btn btn-primary">Submit</button>
+		    		<br>
 	</div>
+	<br>
 </body>
 </html>
 
