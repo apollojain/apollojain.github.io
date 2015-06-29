@@ -1,3 +1,13 @@
+function error(str){
+	sweetAlert({
+				title: "Oops!", 
+				text: str, 
+				type: "error"
+			}, 
+		function(){
+			location.reload();
+		});
+}
 
 function submitInfo(){
 
@@ -32,7 +42,7 @@ function submitInfo(){
 	var dead= "<h5 style='color: #300000; font-weight: bold;'>Impossible</h5>";
 
 	if(units_grade != '' && !isNaN(units_grade) && units_pnp != '' && !isNaN(units_pnp) && technicals != '' && !isNaN(technicals) && early != '' && !isNaN(early) && late != '' && !isNaN(late) && gap_length != '' && !isNaN(gap_length) && straight != '' && !isNaN(straight) && work != '' && !isNaN(work)){
-
+		var num_dead = 0;
 		if(units_grade <= 10){
 			document.getElementById("units_grade_res").innerHTML=grin;
 			score += 0.37*1;
@@ -48,6 +58,7 @@ function submitInfo(){
 		else{
 			document.getElementById("units_grade_res").innerHTML=dead;
 			score += 0.37*4;
+			num_dead += 1;
 		}
 
 		if(units_pnp <= 4){
@@ -74,6 +85,7 @@ function submitInfo(){
 		else{
 			document.getElementById("technicals_res").innerHTML=dead;
 			score += 0.15*4;
+			num_dead += 1;
 		}
 
 		if(early == 0){
@@ -91,6 +103,7 @@ function submitInfo(){
 		else{
 			document.getElementById("early_res").innerHTML=dead;
 			score += 0.03*4;
+			num_dead += 1;
 		}
 
 		if(late == 0){
@@ -108,6 +121,7 @@ function submitInfo(){
 		else{
 			document.getElementById("late_res").innerHTML=dead;
 			score += 0.03*4;
+			num_dead += 1;
 		}
 
 		if(gap_length == 0){
@@ -125,6 +139,7 @@ function submitInfo(){
 		else{
 			document.getElementById("gap_length_res").innerHTML=dead;
 			score += 0.05*4;
+			num_dead += 1;
 		}
 
 		if(straight == 0){
@@ -142,6 +157,7 @@ function submitInfo(){
 		else{
 			document.getElementById("straight_res").innerHTML=dead;
 			score += 0.05*4;
+			num_dead += 1;
 		}
 
 		if(work <= 5){
@@ -159,8 +175,10 @@ function submitInfo(){
 		else{
 			document.getElementById("work_res").innerHTML=dead;
 			score += 0.27*4;
+			num_dead += 1;
 		}
-
+		
+		alert(num_dead);
 		if(score < 1.4){
 			document.getElementById("final_res").innerHTML=grin;
 		}
@@ -170,11 +188,17 @@ function submitInfo(){
 		else if(score < 3.3){
 			document.getElementById("final_res").innerHTML=unhappy;
 		}
+
 		else{
 			document.getElementById("final_res").innerHTML=dead;
 		}
+
+		if(num_dead >2){
+			alert(num_dead)
+			document.getElementById("final_res").innerHTML=dead;
+		}
 	}else{
-		alert('Some portion of the form is filled incorrectly. Please make sure that all form fields are filled with integer values. Please make sure all form fields have been filled in.')
-		location.reload();
+		error('Some portion of the form is filled incorrectly. Please make sure that all form fields are filled with integer values. Please make sure all form fields have been filled in.');
+		
 	}
 }
