@@ -35,11 +35,11 @@ function submitInfo(){
 			document.getElementById("units_grade_res").innerHTML=grin;
 			score += 0.37*1;
 		}
-		else if(units_grade > 10 && units_grade <= 14){
+		else if(units_grade > 10 && units_grade <= 16){
 			document.getElementById("units_grade_res").innerHTML=happy;
 			score += 0.37*2;
 		}
-		else if(units_grade > 14 && units_grade < 20){
+		else if(units_grade > 16 && units_grade < 20){
 			document.getElementById("units_grade_res").innerHTML=unhappy;
 			score += 0.37*3;
 		}
@@ -65,7 +65,7 @@ function submitInfo(){
 			document.getElementById("technicals_res").innerHTML=happy;
 			score += 0.15*2;
 		}
-		else if(technicals > 12 && units_grade < 16){
+		else if(technicals > 12 && units_grade <= 16){
 			document.getElementById("technicals_res").innerHTML=unhappy;
 			score += 0.15*3;
 		}
