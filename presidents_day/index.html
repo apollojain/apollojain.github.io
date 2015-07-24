@@ -17,6 +17,16 @@
 		     js.src = "//connect.facebook.net/en_US/sdk.js";
 		     fjs.parentNode.insertBefore(js, fjs);
 		   }(document, 'script', 'facebook-jssdk'));
+
+		  /* make the API call */
+		FB.api(
+		    "/me",
+		    function (response) {
+		      if (response && !response.error) {
+		        /* handle the result */
+		      }
+		    }
+		);
 		</script>
 	</head>
 	<body>
