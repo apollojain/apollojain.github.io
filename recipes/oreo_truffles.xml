@@ -1,0 +1,31 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Oreo Truffles</Title>
+	<ImageURL>
+		http://redirect.bigoven.com/pics/rs/640/oreo-dessert.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>16 oz Oreo cookies</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>0.5 cup Butter; melted</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>12 oz Cool whip</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>8 oz Cream cheese</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>6 oz Instant chocolate pudding</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>2 cups milk</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Original recipe makes 8 Servings</Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		Crush oreos and save 1/4 cup for topping. Mix crushed oreos with butter and pat into dish for crust. Mix 2/3 container of Cool Whip with cream cheese. Spread mixture over crust. Mix pudding and milk. Let set until it thickens a little. Spread over cream cheese mixture. Top with remaining Cool Whip. Sprinkle saved oreo crumbs.</Instructions>
+</Recipe>
