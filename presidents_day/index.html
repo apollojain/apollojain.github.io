@@ -33,8 +33,17 @@
 		function myFacebookLogin() {
 			FB.login(function(){
 			  // Note: The call will only work if you accept the permission request
-			  FB.api('/me/feed', 'post', {message: 'Hello, world!'});
-			}, {scope: 'publish_actions'});
+			  /* make the API call */
+				FB.api(
+				    "/me",
+				    function (response) {
+				      if (response && !response.error) {
+				        /* handle the result */
+				      }
+				    }
+				);
+			});
+
 		}
 		</script>
 		<button onclick="myFacebookLogin()">Login with Facebook</button>
