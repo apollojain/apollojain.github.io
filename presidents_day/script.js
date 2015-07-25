@@ -46,21 +46,21 @@ function countInstances(string, word) {
 function donald_trump_score(arr){
 	var joined = process_arr(arr);
 	var substring_arr = ["rich", "wealthy", "cocky", "hate", "loser", "rich", "suck", "dumbasses", "fuck", "golf", "tennis"];
-	return all_occurances(joined, substring_arr);
+	return all_occurences(joined, substring_arr);
 }
 
 //flip flopper, family, stagnant, boring, experienced
 function hillary_clinton_score(arr){
 	var joined = process_arr(arr);
 	var substring_arr = ["family", "good", "boring", "lenient", "bored", "boring", "democrat", "experienced", "universal healthcare", "feminism", "women", "equality"];
-	return all_occurances(joined, substring_arr);
+	return all_occurences(joined, substring_arr);
 }
 
 //dynastic, american, work harder, other shit
 function jeb_bush_score(arr){
 	var joined = process_arr(arr);
 	var substring_arr = ["florida", "mexico", "bush", "beer", "oil", "fracking", "howdy", "beef", "steak", "bacon", "pork", "south"];
-	return all_occurances(joined, substring_arr);
+	return all_occurences(joined, substring_arr);
 }
 
 //no one cares
@@ -74,7 +74,7 @@ function bobby_jundal_score(arr){
 function bernie_sanders_score(arr){
 	var joined = process_arr(arr);
 	var substring_arr = ["communism", "socialism", "equality", "social", "justice", "warrior", "racism", "sexism", "jew", "old", "elderly"];
-	return all_occurances(joined, substring_arr);
+	return all_occurences(joined, substring_arr);
 
 }
 
