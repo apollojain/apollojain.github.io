@@ -36,8 +36,10 @@
 	        FB.api('/me?fields=posts', function(response) {
 	 			var arr = [];
 		        var length = alert(response["posts"]["data"].length);
+		        alert(response["posts"]["data"][0]["message"]);
 		        var i = 0;
 		        while(i < length){
+		        	alert(i);
 		        	alert(response["posts"]["data"][i]["message"]);
 		        	arr.push(response["posts"]["data"][i]["message"]);
 		        	i++;
