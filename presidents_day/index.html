@@ -30,19 +30,28 @@
 		  data-show-faces="true">
 		</div>
 		<script>
+		function getUserInfo() {
+	        FB.api('/me', function(response) {
+	 
+	      	  var str="<b>Name</b> : "+response.name+"<br>";
+	          str +="<b>Link: </b>"+response.link+"<br>";
+	          str +="<b>Username:</b> "+response.username+"<br>";
+	          str +="<b>id: </b>"+response.id+"<br>";
+	          str +="<b>Email:</b> "+response.email+"<br>";
+	          alert(str);
+	 
+	    	});
+	    }
 		function myFacebookLogin() {
-			FB.login(function(){
-			  // Note: The call will only work if you accept the permission request
-			  /* make the API call */
-				FB.api(
-				    "/me",
-				    function (response) {
-				      if (response && !response.error) {
-				        alert(response)
-				      }
-				    }
-				);
-			});
+			FB.login(function(response) {
+	           if (response.authResponse) 
+	           {
+	                getUserInfo();
+	            } else 
+	            {
+	             console.log('User cancelled login or did not fully authorize.');
+	            }
+	         },{scope: 'email,user_photos,user_videos'});
 
 		}
 		</script>
