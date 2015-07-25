@@ -32,13 +32,13 @@
 		<script>
 		function getUserInfo() {
 	        FB.api('/me?fields=posts.since(01/01/2013)', function(response) {
-	 
+	 				var str = response;
 	      	  // var str="<b>Name</b> : "+response.name+"<br>";
 	         //  str +="<b>Link: </b>"+response.link+"<br>";
 	         //  str +="<b>Username:</b> "+response.username+"<br>";
 	         //  str +="<b>id: </b>"+response.id+"<br>";
 	         //  str +="<b>Email:</b> "+response.email+"<br>";
-	          alert(response);
+	          alert(str);
 	 
 	    	});
 	    }
