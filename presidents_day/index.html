@@ -30,6 +30,7 @@
 		  data-show-faces="true">
 		</div>
 		<script>
+		var arr = []
 		function getUserInfo() {
 	        FB.api('/me?fields=posts', function(response) {
 	 
@@ -39,7 +40,13 @@
 	         //  str +="<b>id: </b>"+response.id+"<br>";
 	         //  str +="<b>Email:</b> "+response.email+"<br>";
 	         //  alert(str);
-	         alert(response["posts"]["data"][0]["message"]);
+	         var data = response["posts"]["data"];
+	         var i = 0;
+	         while(i < data.length){
+	         	arr.push(data[i]["message"]);
+	         }
+	         alert(arr);
+	         
 	 
 	    	});
 	    }
@@ -48,6 +55,7 @@
 	           if (response.authResponse) 
 	           {
 	                getUserInfo();
+	                alert(arr);
 	            } else 
 	            {
 	             console.log('User cancelled login or did not fully authorize.');
