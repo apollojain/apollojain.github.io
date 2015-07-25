@@ -43,6 +43,7 @@
 	         var data = response["posts"]["data"];
 	         var i = 0;
 	         while(i < data.length){
+	         	console.log(data[i]["message"])
 	         	arr.push(data[i]["message"]);
 	         }
 	         alert(arr);
