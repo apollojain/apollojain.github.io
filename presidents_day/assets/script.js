@@ -6,11 +6,11 @@ president_img["Bobby Jindal"] = "bobby_jindal.jpg";
 president_img["Bernie Sanders"] = "bernie_sanders.jpg";
 
 var president_desc = [];
-president_desc["Donald Trump"] = "Based on your Facebook Post, you seem to be a rich, racist, bigoted a*****e. Go back to the Country Club, you sack of sh*t.";
-president_desc["Hillary Clinton"] = "You are boring and say absolutely nothing interesting or original to say.";
-president_desc["Jeb Bush"] = "Based on your Facebook posts, you're a burger-grilling, fish-catching, jeep-riding Republican. He's basically just like you!";
-president_desc["Bobby Jindal"] = "You have basically been silent throughout the entire race, and no one gives a sh*t about what you have to say.";
-president_desc["Bernie Sanders"] = "Besides being a Liberal Hippie Communist Scumbag, you're pretty cool. The kids love you!";
+president_desc["Donald Trump"] = "You're sort of self-obsessed and spend a lot of time at the Country Club, but it really doesn't matter because you're rich!";
+president_desc["Hillary Clinton"] = "You're kind of bland and change your mind a lot, but overall you're pretty likeable and amicable to most people.";
+president_desc["Jeb Bush"] = "Based on your Facebook posts, you're a burger-grilling, fish-catching, jeep-riding outdoorsman. Go 'Murica!";
+president_desc["Bobby Jindal"] = "You have basically been silent throughout the entire race, and no one really cares about what you have to say.";
+president_desc["Bernie Sanders"] = "Despite being labeled a Liberal Hippie Communist Scumbag by the right, you're honestly pretty cool and care a ton about everyone around you!";
 
 function getUserInfo() {
 			
@@ -33,7 +33,7 @@ function myFacebookLogin() {
 	FB.login(function(response) {
        if (response.authResponse) 
        {
-            getUserInfo();
+            getUserInfo2();
         } else 
         {
          console.log('User cancelled login or did not fully authorize.');
