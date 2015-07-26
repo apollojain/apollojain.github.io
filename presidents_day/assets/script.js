@@ -23,7 +23,7 @@ function getUserInfo() {
         	i++;
         }
         var president = which_president(arr);
-        document.body.style.backgroundImage = "url('"+ president_img[president] + "')";
+        document.body.style.backgroundImage = "url('assets/"+ president_img[president] + "')";
         document.getElementById("cover-heading").innerHTML = president;
         document.getElementById("description").innerHTML = president_desc[president];
 	});
