@@ -119,7 +119,6 @@ function which_president(arr){
 		}
         i++;    
     }
-    alert(top_candidate);
 	return top_candidate;
 
 }
