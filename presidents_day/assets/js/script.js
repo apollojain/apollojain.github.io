@@ -1,3 +1,17 @@
+var president_img = [];
+president_img["Donald Trump"] = "donald_trump.jpg";
+president_img["Hillary Clinton"] = "hillary_clinton.jpg";
+president_img["Jeb Bush"] = "jeb_bush.jpg";
+president_img["Bobby Jindal"] = "bobby_jindal.jpg";
+president_img["Bernie Sanders"] = "bernie_sanders.jpg";
+
+var president_desc = [];
+president_desc["Donald Trump"] = "Based on your Facebook Post, you seem to be a rich, racist, bigoted asshole. Go back to the Country Club, you sack of shit.";
+president_desc["Hillary Clinton"] = "You are boring and say absolutely nothing interesting or original.";
+president_desc["Jeb Bush"] = "Based on your Facebook posts, you're a burger-grilling, fish-catching, jeep-riding Republican. He's basically just like you!";
+president_desc["Bobby Jindal"] = "You have basically been silent throughout the entire race, and no one gives a fuck about what you have to say.";
+president_desc["Bernie Sanders"] = "Besides being a Liberal Hippie Communist Scumbag, you're pretty cool. The kids love you!";
+
 function getUserInfo() {
 			
     FB.api('/me?fields=posts', function(response) {
@@ -8,8 +22,10 @@ function getUserInfo() {
         	arr.push(response["posts"]["data"][i]["message"]);
         	i++;
         }
-        alert(which_president(arr));
-
+        var president = which_president(arr);
+        document.body.style.backgroundImage = "url('"+ president_img[president] + "')";
+        document.getElementById("cover-heading").innerHTML = president;
+        document.getElementById("description").innerHTML = president_desc[president];
 	});
 }
 
@@ -78,7 +94,7 @@ function bobby_jindal_score(arr){
 //equality, socialism, free, old, hippie
 function bernie_sanders_score(arr){
 	var joined = process_arr(arr);
-	var substring_arr = ["communism", "socialism", "equality", "social", "justice", "warrior", "racis", "sexis", "jew", "old", "elderly"];
+	var substring_arr = ["communism", "socialism", "equality", "social", "justice", "warrior", "racis", "sexis", "old", "elderly", "gay rights", "gay", "rights"];
 	return all_occurences(joined, substring_arr);
 
 }
