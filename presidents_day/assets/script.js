@@ -6,10 +6,10 @@ president_img["Bobby Jindal"] = "bobby_jindal.jpg";
 president_img["Bernie Sanders"] = "bernie_sanders.jpg";
 
 var president_desc = [];
-president_desc["Donald Trump"] = "Based on your Facebook Post, you seem to be a rich, racist, bigoted asshole. Go back to the Country Club, you sack of shit.";
-president_desc["Hillary Clinton"] = "You are boring and say absolutely nothing interesting or original.";
+president_desc["Donald Trump"] = "Based on your Facebook Post, you seem to be a rich, racist, bigoted a*****e. Go back to the Country Club, you sack of sh*t.";
+president_desc["Hillary Clinton"] = "You are boring and say absolutely nothing interesting or original to say.";
 president_desc["Jeb Bush"] = "Based on your Facebook posts, you're a burger-grilling, fish-catching, jeep-riding Republican. He's basically just like you!";
-president_desc["Bobby Jindal"] = "You have basically been silent throughout the entire race, and no one gives a fuck about what you have to say.";
+president_desc["Bobby Jindal"] = "You have basically been silent throughout the entire race, and no one gives a sh*t about what you have to say.";
 president_desc["Bernie Sanders"] = "Besides being a Liberal Hippie Communist Scumbag, you're pretty cool. The kids love you!";
 
 function getUserInfo() {
