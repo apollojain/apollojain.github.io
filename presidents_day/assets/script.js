@@ -33,7 +33,7 @@ function myFacebookLogin() {
 	FB.login(function(response) {
        if (response.authResponse) 
        {
-            getUserInfo2();
+            getUserInfo();
         } else 
         {
          console.log('User cancelled login or did not fully authorize.');
