@@ -27,8 +27,10 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url("assets/img/white_house.jpg");
+  background-image: url("white_house.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-position: center; 
 }
 body {
   color: #fff;
@@ -161,4 +163,8 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+#cover-heading{
+  font-size:55px;
 }
