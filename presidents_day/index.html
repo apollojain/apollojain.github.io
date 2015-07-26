@@ -28,7 +28,7 @@
             <h1 id="cover-heading" class="cover-heading">Which Presidential Candidate are you?</h1>
             <p id="description" class="lead">Click the button below to see which presidential candidate you are most similar to based off of your posts and likes!</p>
             <p class="lead">
-              <button class="btn btn-lg btn-primary" onclick="myFacebookLogin()">Find out</button>
+              <button id="submit-btn" class="btn btn-lg btn-primary" onclick="myFacebookLogin()">Find out</button>
             </p>
           </div>
 
@@ -41,7 +41,12 @@
 		
 	<script src="assets/script.js"></script>
 	<script>
-
+	$(document).ready(function(){
+	    $("#submit-btn").click(function(){
+	        $(this).hide();
+	        $("#cover-heading").css("font-size", "30dp"); 
+	    });
+	});
 	</script>
 	</body>
 
