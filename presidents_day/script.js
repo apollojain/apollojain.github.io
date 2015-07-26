@@ -1,38 +1,14 @@
-function getUserInfo() {
-			
-    FB.api('/me?fields=posts', function(response) {
-			var arr = [];
-        var length = response["posts"]["data"].length;
-        var i = 0;
-        while(i < length){
-        	arr.push(response["posts"]["data"][i]["message"]);
-        	i++;
-        }
-        alert(which_president(arr));
-
-	});
-}
-function myFacebookLogin() {
-	FB.login(function(response) {
-       if (response.authResponse) 
-       {
-            getUserInfo();
-        } else 
-        {
-         console.log('User cancelled login or did not fully authorize.');
-        }
-     },{scope: 'user_posts'});
-
-}
-
 function process_arr(arr){
 	return arr.join(' ').toLowerCase().replace(/[\.,-\/#!?@$%\^&\*;:{}=\-_`~()]/g,"")
 }
 
 function all_occurences(string, substring_arr){
 	var total = 0;
-	for(substring in substring_arr){
-		total += countInstances(string, substring, true);
+    var i = 0;
+    while(i < substring_arr.length){
+        alert(substring_arr[i])
+		total += countInstances(string, substring_arr[i]);
+        i++;
 	}
 	return total;
 }
