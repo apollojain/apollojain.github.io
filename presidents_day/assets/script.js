@@ -13,11 +13,12 @@ president_desc["Bobby Jindal"] = "You have basically been silent throughout the 
 president_desc["Bernie Sanders"] = "Despite being labeled a Liberal Hippie Communist Scumbag by the right, you're honestly pretty cool and care a ton about everyone around you!";
 
 function getUserInfo() {
-			
+	var arr2 = ["hello"]
     FB.api('/me?fields=posts', function(response) {
 			var arr = [];
         var length = response["posts"]["data"].length;
         var i = 0;
+        arr2.push("wtf");
         while(i < length){
         	arr.push(response["posts"]["data"][i]["message"]);
         	i++;
@@ -27,6 +28,7 @@ function getUserInfo() {
         document.getElementById("cover-heading").innerHTML = president;
         document.getElementById("description").innerHTML = president_desc[president];
 	});
+	alert(arr2);
 }
 
 function myFacebookLogin() {
