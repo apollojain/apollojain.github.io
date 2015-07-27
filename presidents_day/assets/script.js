@@ -13,22 +13,26 @@ president_desc["Bobby Jindal"] = "You have basically been silent throughout the 
 president_desc["Bernie Sanders"] = "Despite being labeled a Liberal Hippie Communist Scumbag by the right, you're honestly pretty cool and care a ton about everyone around you!";
 
 function getUserInfo() {
-	var arr2 = ["hello"]
-    FB.api('/me?fields=posts', function(response) {
-			var arr = [];
-        var length = response["posts"]["data"].length;
+    FB.api('/me?fields=posts,likes', function(response) {
+		var arr = [];
+        var len = response["posts"]["data"].length;
         var i = 0;
-        arr2.push("wtf");
-        while(i < length){
+        while(i < len){
         	arr.push(response["posts"]["data"][i]["message"]);
         	i++;
         }
+        i = 0
+        len = response["likes"]["data"].length;
+        while(i < len){
+        	arr.push(response["likes"]["data"][i]["name"]);
+        	i++;
+        }
+        console.log(arr);
         var president = which_president(arr);
         document.body.style.backgroundImage = "url('assets/"+ president_img[president] + "')";
         document.getElementById("cover-heading").innerHTML = president;
         document.getElementById("description").innerHTML = president_desc[president];
 	});
-	alert(arr2);
 }
 
 function myFacebookLogin() {
@@ -40,7 +44,7 @@ function myFacebookLogin() {
         {
          console.log('User cancelled login or did not fully authorize.');
         }
-     },{scope: 'user_posts'});
+     },{scope: 'user_posts, user_likes'});
 
 }
 
