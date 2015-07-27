@@ -1,0 +1,32 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Reuben Sandwich</Title>
+	<ImageURL>
+		http://redirect.bigoven.com/pics/rs/640/reuben-sandwich-3.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>1/2 lb Swiss cheese; shredded</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>8 sl Rye bread with caraway seeds</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 c Sauerkraut; well drained</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/4 lb Corned beef; thinly sliced</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/4 c Unsalted butter; softened</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>3/4 c Thousand Island dressing</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Original recipe makes 4</Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		Lay out the bread slices and spread 1 side with butter. Turn and spread other side with Thousand Island Dressing. Lay meat on the dressing spread side of 4 of the slices, tucking in any overhang. Spread sauerkraut evenly atop the corned beef, then distribute the chesse over the sauerkraut. Top with remaining bread slices, butter side out, and press down tightly. Heat large nonstick skillet or griddle to medium heat. Working in batches if necessary, fry sandwiches until golden, about 5 minutes, pressing down several times with spatula. Carefully turn and cook pressing down, until second side is golden and cheese has melted, 3-4 minutes. Turn again, and cook 2-3 minutes more.
+	</Instructions>
+</Recipe>
