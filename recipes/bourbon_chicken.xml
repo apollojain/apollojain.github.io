@@ -1,7 +1,7 @@
 <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Title>Bourbon Chicken</Title>
 	<ImageURL>
-	http://redirect.bigoven.com/pics/rs/640/bourbon-chicken-179.jpg
+		http://redirect.bigoven.com/pics/rs/640/bourbon-chicken-179.jpg
 	</ImageURL>
 	<Ingredients>
 		<Ingredient>
@@ -45,7 +45,7 @@
 		</Ingredient>
 	</Ingredients>
 	<Instructions>
-		Heat oil in a large skillet. Add chicken pieces and cook until lightly browned. Remove chicken. Add remaining ingredients, heating over medium heat until well blended and dissolved. Add chicken and bring to a hard boil. Reduce heat and simmer for 20 minutes uncovered. Serve over hot rice.</Instructions>
+		Heat oil in a large skillet. Add chicken pieces and cook until lightly browned. Remove chicken. Add remaining ingredients, heating over medium heat until well blended and dissolved. Add chicken and bring to a hard boil. Reduce heat and simmer for 20 minutes uncovered. Serve over hot rice.
 	</Instructions>
 		
 </Recipe>
