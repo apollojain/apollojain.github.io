@@ -19,7 +19,7 @@ function getUserInfo() {
         var i = 0;
         while(i < len){
         	arr.push(response["posts"]["data"][i]["message"]);
-        	i++;
+        	i++;zz
         }
         i = 0
         len = response["likes"]["data"].length;
