@@ -16,7 +16,7 @@ function getUserInfo() {
     alert("first here");
     FB.api('/me?fields=posts.limit(300),likes.limit(300)', function(response) {
         alert("now here");
-        alert(response);
+        alert(JSON.stringify(response));
 		var arr = [];
         var len = response["posts"]["data"].length;
         var i = 0;
