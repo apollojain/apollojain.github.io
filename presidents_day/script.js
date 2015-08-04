@@ -1,12 +1,12 @@
 function process_arr(arr){
-	return arr.join(' ').toLowerCase().replace(/[\.,-\/#!?@$%\^&\*;:{}=\-_`~()]/g,"")
+	return arr.join(' ').toLowerCase().replace(/[\.,-\/#!?@$%\^&\*;:{}=\-_`~()]/g,"");
 }
 
 function all_occurences(string, substring_arr){
 	var total = 0;
     var i = 0;
     while(i < substring_arr.length){
-        alert(substring_arr[i])
+        // alert(substring_arr[i])
 		total += countInstances(string, substring_arr[i]);
         i++;
 	}
