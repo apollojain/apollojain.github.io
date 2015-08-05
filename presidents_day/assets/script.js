@@ -39,24 +39,25 @@ function getUserInfo() {
 }
 
 function myFacebookLogin() {
-    alertStr("You are about to log in with Facebook. This application will read off of your Facebook likes and posts to match you to the president most similar to you. ")
-	FB.login(function(response) {
-       if (response.authResponse) 
-       {
-            getUserInfo();
-        } else 
-        {
-         console.log('User cancelled login or did not fully authorize.');
-        }
-     },{scope: 'user_posts, user_likes'});
-
-}
+    alertStr("You are about to log in with Facebook. This application will read off of your Facebook likes and posts to match you to the president most similar to you. ");
 
 function alertStr(str){
     sweetAlert({
-                title: "Facebook Login", 
-                text: str
-            });
+        title: "Facebook Login", 
+        text: str
+    }, 
+    {
+        FB.login(function(response) {
+            if (response.authResponse) 
+            {
+                getUserInfo();
+            } else 
+            {
+                console.log('User cancelled login or did not fully authorize.');
+            }
+        },{scope: 'user_posts, user_likes'});
+            
+    });
 }
 
 function process_arr(arr){
