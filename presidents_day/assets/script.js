@@ -38,9 +38,7 @@ function getUserInfo() {
 }
 
 function myFacebookLogin() {
-    alertStr("You are about to log in with Facebook. This application will read off of your Facebook likes and posts to match you to the president most similar to you. ");
-
-function alertStr(str){
+    var str = "You are about to log in with Facebook. This application will read off of your Facebook likes and posts to match you to the president most similar to you.";
     sweetAlert({
         title: "Facebook Login", 
         text: str
@@ -54,8 +52,7 @@ function alertStr(str){
             {
                 console.log('User cancelled login or did not fully authorize.');
             }
-        },{scope: 'user_posts, user_likes'});
-            
+        },{scope: 'user_posts, user_likes'}); 
     });
 }
 
