@@ -19,11 +19,14 @@ function getUserInfo() {
         alert(JSON.stringify(response));
 		var arr = [];
         var len = response["posts"]["data"].length;
+
+        alert("first");
         var i = 0;
         while(i < len){
         	arr.push(response["posts"]["data"][i]["message"]);
         	i++;zz
         }
+        alert("second");
         i = 0
         len = response["likes"]["data"].length;
         while(i < len){
@@ -31,7 +34,10 @@ function getUserInfo() {
         	i++;
         }
         console.log(arr);
+        alert("NOW HERE!!!");
         var president = which_president(arr);
+        alert(president)
+        alert("Where did it fuck up?");
         document.body.style.backgroundImage = "url('assets/"+ president_img[president] + "')";
         document.getElementById("cover-heading").innerHTML = president;
         document.getElementById("description").innerHTML = president_desc[president];
