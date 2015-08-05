@@ -24,7 +24,7 @@ function getUserInfo() {
         var i = 0;
         while(i < len){
         	arr.push(response["posts"]["data"][i]["message"]);
-        	i++;zz
+        	i++;
         }
         alert("second");
         i = 0
@@ -36,7 +36,7 @@ function getUserInfo() {
         console.log(arr);
         alert("NOW HERE!!!");
         var president = which_president(arr);
-        alert(president)
+        alert(president);
         alert("Where did it fuck up?");
         document.body.style.backgroundImage = "url('assets/"+ president_img[president] + "')";
         document.getElementById("cover-heading").innerHTML = president;
