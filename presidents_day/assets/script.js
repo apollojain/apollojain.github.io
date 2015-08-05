@@ -39,6 +39,7 @@ function getUserInfo() {
 }
 
 function myFacebookLogin() {
+    alertStr("You are about to log in with Facebook. This application will read off of your Facebook likes and posts to match you to the president most similar to you. ")
 	FB.login(function(response) {
        if (response.authResponse) 
        {
@@ -49,6 +50,13 @@ function myFacebookLogin() {
         }
      },{scope: 'user_posts, user_likes'});
 
+}
+
+function alertStr(str){
+    sweetAlert({
+                title: "Facebook Login", 
+                text: str
+            });
 }
 
 function process_arr(arr){
