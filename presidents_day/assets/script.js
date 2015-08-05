@@ -15,6 +15,7 @@ president_desc["Bernie Sanders"] = "Despite being labeled a Liberal Hippie Commu
 function getUserInfo() {
     FB.api('/me?fields=posts.limit(300),likes.limit(300)', function(response) {
 		var arr = [];
+        alert("now here");
         var len = response["posts"]["data"].length;
 
         var i = 0;
@@ -44,7 +45,7 @@ function alertStr(str){
         title: "Facebook Login", 
         text: str
     }, 
-    {
+    function(){
         FB.login(function(response) {
             if (response.authResponse) 
             {
