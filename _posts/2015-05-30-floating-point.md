@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Schedule Judger"
+title: "Floating Point Converter"
 type: "project"
-date: 2014-05-30
+date: 2015-05-30
 href: "http://www.apollojain.me/floating_point"
 ---
 
