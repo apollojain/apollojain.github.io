@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Projects"
+heading: "Welcome."
+subheading: "Enjoy my quests to find out more about the world around me."
+image: "/img/post-bg.jpg"
+---
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% for post in site.posts %}
+                {% if post.type == "project" %}
+                    <div class="post-preview">
+                        <a href="{{post.href}}">
+                            <h2 class="post-title">
+                                {{post.title}}
+                            </h2>
+                             <p>{{ post.date | date: "%B %Y" }}</p>
+                            <p>
+                                {{post.content}}
+                            </p>
+                        </a>
+                       
+                    </div>
+                    <hr>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
