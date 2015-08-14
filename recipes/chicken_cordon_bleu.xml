@@ -1,5 +1,6 @@
 <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Title>Chicken Cordon Bleu</Title>
+	<ImageURL>
 		http://redirect.bigoven.com/pics/baked-chicken-cordon-bleu-43.jpg
 	</ImageURL>
 	<Ingredients>
