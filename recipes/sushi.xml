@@ -1,7 +1,7 @@
 <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Title>Sushi</Title>
 	<ImageURL>
-		http://images.bigoven.com/image/upload/v1421123263/salmon-sushi-3.jpg
+		http://www.alaskaseafood.org/canned/images/sushi.jpg
 	</ImageURL>
 	<Ingredients>
 		<Ingredient>
