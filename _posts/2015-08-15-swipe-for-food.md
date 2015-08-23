@@ -3,7 +3,7 @@ layout: post
 title: "Swipe for Food"
 type: "project"
 date: 2015-08-15
-href: "http://www.apollojain.me/presidents_day"
+href: "https://play.google.com/store/apps/details?id=net.list.apollo.jsonpractice&hl=en"
 main: false
 ---
 
