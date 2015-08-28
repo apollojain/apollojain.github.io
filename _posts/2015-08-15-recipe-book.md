@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Swipe for Food"
+title: "Recipe Book"
 type: "project"
 date: 2015-08-15
-href: "https://play.google.com/store/apps/details?id=net.list.apollo.jsonpractice&hl=en"
+href: "https://www.github.com/apollojain/swipeforfood"
 main: false
 ---
 
