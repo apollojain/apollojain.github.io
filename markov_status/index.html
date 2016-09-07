@@ -1,40 +1,38 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/cover.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="assets/sweetalert.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="assets/sweetalert.min.js"></script>
 
 	</head>
 	<body>
-		<script>
-		  window.fbAsyncInit = function() {
-		    FB.init({
-		      appId      : '1621729421479588',
-		      xfbml      : true,
-		      version    : 'v2.6'
-		    });
+		<script src="assets/fb.js"></script>
+		<div class="site-wrapper">
 
-		    FB.ui({
-			  method: 'share_open_graph',
-			  action_type: 'og.likes',
-			  action_properties: JSON.stringify({
-			    object:'https://developers.facebook.com/docs/',
-			  })
-			}, function(response){
-			  // Debug response (optional)
-			  console.log(response);
-			});
-		  };
+	      <div class="site-wrapper-inner">
 
-		  (function(d, s, id){
-		     var js, fjs = d.getElementsByTagName(s)[0];
-		     if (d.getElementById(id)) {return;}
-		     js = d.createElement(s); js.id = id;
-		     js.src = "https://connect.facebook.net/en_US/sdk.js";
-		     fjs.parentNode.insertBefore(js, fjs);
-		   }(document, 'script', 'facebook-jssdk'));
+	        <div class="cover-container">
 
-		</script>
-		<script>
+	          <div class="inner cover">
+	            <h1 id="cover-heading" class="cover-heading">Welcome to Markov Status.</h1>
+	            <p id="description" class="lead">Click the button below to generate a Facebook Status based on your past Facebook Posts.</p>
+	            <p class="lead">
+	              <button id="submit-btn" class="btn" style="background-color: #3B5998; color: white; height:50px;" onclick="myFacebookLogin()"><img src="assets/fbook.PNG" alt="facebook"/> Log In</button>
+	              <!-- <div class="fb-login-button" data-max-rows="2" data-size="xlarge" onclick="myFacebookLogin()" id="submit-btn"></div> -->
+	            </p>
+	          </div>
 
-		</script>
+	        </div>
+
+	      </div>
+
+	    </div>
 
 	</body>
 </html>
