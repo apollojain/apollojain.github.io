@@ -1,0 +1,11 @@
+body {
+	background-repeat:no-repeat;
+    background-image: url("img/correct.jpg");
+    
+    background-position: center top;
+}
+
+#next{
+	position: absolute;
+	top: 400px;
+}
