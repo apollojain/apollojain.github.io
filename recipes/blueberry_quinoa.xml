@@ -1,0 +1,35 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Blueberry Breakfast Quinoa</Title>
+	<ImageURL>
+		http://images.bigoven.com/image/upload/v1419376298/blueberry-breakfast-quinoa.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>2 cups 2% Milk</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/2 teaspoon Cinnamon</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 Vanilla bean; Seeded</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>2 cups Quinoa; Cooked</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 cup Blueberries</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/4 Cup Sliced almonds</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 tablespoon Honey</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Original recipe makes 4</Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		In a large glass measuring cup, whisk together milk, cinnamon, and vanilla bean seeds. Scoop the quinoa evenly into serving bowls. Serve immediately with milk mixture, topped with blueberries, almonds, and a drizzle of honey.
+	</Instructions>
+</Recipe>

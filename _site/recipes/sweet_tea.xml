@@ -1,0 +1,30 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Southern Sweet Tea</Title>
+	<ImageURL>
+	http://images.bigoven.com/image/upload/v1419045280/southern-sweet-tea.jpg</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>6 tea bags; regular</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 1/2 cups sugar</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/8 tsp baking soda</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>6 cup cold water</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>2 cup boiling water</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Original recipe makes 6 Servings</Name>
+		</Ingredient>
+	</Ingredients>
+	
+	<Instructions>
+		In a large glass measuring cup, place the tea bags and add the baking soda. Pour the boiling water over the tea bags. Cover and steep for 15 minutes. Take out the tea bags and do not squeeze them. Pour the tea mixture into a 2-quart pitcher; add the sugar. Stir until the sugar is dissolved. Add in the cold water. Let cool; chill in the refrigerator and serve over ice.
+	</Instructions>
+		
+</Recipe>

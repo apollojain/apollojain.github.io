@@ -1,0 +1,60 @@
+---
+layout: default
+title: "Projects"
+heading: "My Projects."
+subheading: "Cool little things I've worked on in my free time."
+image: "/img/hack.jpg"
+---
+<div class="container">
+    <div class="row">
+        <div id="limited" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% for post in site.posts %}
+                {% if post.type == "project" %}
+                    {% if post.main == true %}
+                        <div class="post-preview">
+                            <a href="{{post.href}}">
+                                <h2 class="post-title">
+                                    {{post.title}}
+                                </h2>
+                                 <p>{{ post.date | date: "%B %Y" }}</p>
+                                <p>
+                                    {{post.content}}
+                                </p>
+                            </a>
+                           
+                        </div>
+                        <hr>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            <a id="show_unlimited" href="#">Show More</a>
+        </div>
+        <div id="unlimited" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {% for post in site.posts %}
+            {% if post.type == "project" %}
+                <div class="post-preview">
+                    <a href="{{post.href}}">
+                        <h2 class="post-title">
+                            {{post.title}}
+                        </h2>
+                         <p>{{ post.date | date: "%B %Y" }}</p>
+                        <p>
+                            {{post.content}}
+                        </p>
+                    </a>
+                </div>
+                <hr>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+    $("#unlimited").hide();
+    $("#show_unlimited").click(function(){
+        $("#limited").hide();
+        $("#unlimited").show();
+    });
+});
+</script>

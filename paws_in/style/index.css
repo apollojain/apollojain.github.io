@@ -1,0 +1,11 @@
+body {
+	background-repeat:no-repeat;
+    background-image: url("img/paws_in_homepage.jpg");
+    
+    background-position: center top;
+}
+
+#enter{
+	position: absolute;
+	top: 400px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="base_conversion.css">
+  <link rel="stylesheet" href="sweetalert.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="sweetalert.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <p class="hidden" id="id1"></p>
+  <p class="hidden" id="id2"></p>
+  <p class="hidden" id="id3"></p>
+  <h2>Base Conversion</h2>
+  <p>Uses 8-bit integers by convention</p>                                   
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Conversion Type
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li onclick="change_hidden_h1('signed', 'id1');" ><a>Signed</a></li>
+      <li onclick="change_hidden_h1('unsigned', 'id1');"><a>Unsigned</a></li>
+      <li onclick="change_hidden_h1('ones_complement', 'id1');"><a>One's Complement</a></li>
+      <li onclick="change_hidden_h1('twos_complement','id1');"><a>Two's Complement</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">From
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li onclick="change_hidden_h1('base_2', 'id2');" ><a>Binary</a></li>
+      <li onclick="change_hidden_h1('base_10', 'id2');"><a>Decimal</a></li>
+      <li onclick="change_hidden_h1('base_16', 'id2');"><a>Hexadecimal</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">To
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li onclick="change_hidden_h1('base_2', 'id3');" ><a>Binary</a></li>
+      <li onclick="change_hidden_h1('base_10', 'id3');"><a>Decimal</a></li>
+      <li onclick="change_hidden_h1('base_16', 'id3');"><a>Hexadecimal</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <div>
+    <textarea id="t1"rows="4" cols="30%">
+    Enter a number here. 
+    </textarea>
+  </div>
+  <br>
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" onclick="submitData();">Convert
+    </button>
+</div>
+
+<script src="base_conversion.js"></script>
+
+</body>
+</html>

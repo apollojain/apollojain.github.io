@@ -1,0 +1,32 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Horchata</Title>
+	<ImageURL>
+		http://images.bigoven.com/image/upload/v1419169667/horchata-ground-rice-drink.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name> 1 cup Long grain rice </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 4 cups milk </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 1/2 cup Sugar </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 1 teaspoon Vanilla </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 1/2 teaspoon Cinnamon </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> Ice </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> Original recipe makes 6 Servings </Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		Place the rice in a bowl with enough hot water to cover. Let the rice sit overnight. Next day, remove and reserve the water. Place 1/2 cup of the water, and 2 cups milk in a blender with 1/2 of the rice. Blend until rice is all ground up. Mix in 1/4 cup sugar, 1/2 t vanilla, and 1/4 t cinnamon. Do the same with the other half of the ingredients. Strain through cheesecloth (or whatever). Serve over ice. Makes 6 glasses. 
+	</Instructions>
+</Recipe>

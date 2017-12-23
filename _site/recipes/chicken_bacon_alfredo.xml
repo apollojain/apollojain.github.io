@@ -1,0 +1,41 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Chicken Bacon Alfredo</Title>
+	<ImageURL>
+	http://redirect.bigoven.com/pics/rs/640/chicken-bacon-alfredo-25.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>4 each skinless boneless chicken breasts</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 cup olive oil</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 cup Progresso Italian Bread Crumbs</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 cup Colby or Jack Cheese; shredded</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 tablespoon Parmesan</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 tablespoon Fresh parsley; chopped</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>6 slices Bacon</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 cup Alfredo sauce</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Salt and pepper; to taste</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Original recipe makes 4</Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		Preheat oven to 375. Fry (or microwave) bacon until crispy, allow to cool. Heat olive oil on medium in 10" skillet. Rinse chicken breasts; coat generously with bread crumbs; fry in olive oil on medium/high heat until cooked through. In small bowl, combine parsley, mayonnaise, 1/4 c. of the Colby/Jack cheese, and crumbled bacon. This should make a thick paste; if too thick add little more mayonnaise. Transfer chicken to baking dish and coat with mixture from bowl. Sprinkle with parmesan cheese, drizzle Alfredo sauce over tops and add remaining shredded cheese. Bake 30-35 minutes or until edges are golden brown. Salt and pepper to taste.
+	</Instructions>
+</Recipe>

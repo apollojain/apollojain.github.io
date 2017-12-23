@@ -1,0 +1,51 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Bourbon Chicken</Title>
+	<ImageURL>
+		http://redirect.bigoven.com/pics/rs/640/bourbon-chicken-179.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>2 pounds boneless chicken breasts; cut into bite-size pieces</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 tablespoon olive oil; (1-2)</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 garlic clove; crushed</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/4 teaspoon ginger</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>3/4 teaspoon crushed red pepper flakes</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/4 cup apple juice</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/3 cup light brown sugar</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>2 tablespoons ketchup</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 tablespoon cider vinegar</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/2 cup water</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/3 cup soy sauce</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 tablespoon cornstarch; (if thick sauce desired)</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Makes 4 Servings</Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		Heat oil in a large skillet. Add chicken pieces and cook until lightly browned. Remove chicken. Add remaining ingredients, heating over medium heat until well blended and dissolved. Add chicken and bring to a hard boil. Reduce heat and simmer for 20 minutes uncovered. Serve over hot rice.
+	</Instructions>
+		
+</Recipe>

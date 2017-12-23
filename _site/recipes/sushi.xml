@@ -1,0 +1,32 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Sushi</Title>
+	<ImageURL>
+		http://www.alaskaseafood.org/canned/images/sushi.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>1 lb salmon fillet; Sushi quality</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 1 pk Nori </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>2 c sticky rice; Cooked </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 Cucumber; thinly sliced</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> Soy sauce; for dipping </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> Wasabi </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>Original recipe makes 12 Servings</Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		 Roll out a seaweed sushi wrapper onto a flat surface. A sushi roller may be used. Place a layer of sticky rice onto the seaweed wrap, gently pressing flat. Place a thin slice of sushi quality salmon onto the sticky rice, or dice the salmon and place on top. Spread the strips of cucumber onto the salmon. Top with a sprinkle of scallions. Roll and slice the sushi. Serve with soy sauce and wasabi. As an option, you may spread a thin layer of wasabi into the center of the roll while making it. 
+	</Instructions>
+</Recipe>

@@ -1,0 +1,39 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Chicken Marsala</Title>
+	<ImageURL>
+		http://passthesushi.com/wp-content/uploads/2012/04/Chicken_marsala_0215.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name> 8 chicken breasts; skinless, deboned, pounded thin </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> Flour </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 1/4 teaspoon pepper </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 2 tablespoon olive oil </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 2 tablespoon Butter; unsalted </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 2 cloves garlic; minced </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 1 1/2 cups mushrooms; sliced </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> 1 1/4 cup Marsala wine </Name>
+		</Ingredient>
+		<Ingredient>
+			<Name> Original recipe makes 4 </Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		Season chicken with salt and pepper and coat lightly with flour. Heat 1 T olive oil and butter over medium-high heat and cook chicken until both sides are lightly browned, approx. 3-4 minutes, set aside on plate. Add the other tablespoon of olive oil and sauté garlic until softened. Add mushrooms, salt and pepper and sauté until tender, approx. 3 minutes. Add marsala to deglaze pan and simmer a few minutes as it reduces. Return chicken to pan and cook until heated through; add one tablespoon of butter into sauce.
+	</Instructions>
+		
+</Recipe>

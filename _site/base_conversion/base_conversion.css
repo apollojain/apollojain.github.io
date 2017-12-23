@@ -1,0 +1,12 @@
+.hidden {
+	    display: none;
+}
+
+#text_boxes{
+	padding-top:20px;
+	padding-left: 75px;
+}
+
+.dropdown{
+    display: inline;
+}

@@ -1,0 +1,38 @@
+<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Chocolate Chip Pudding Cookies</Title>
+	<ImageURL>
+	http://redirect.bigoven.com/pics/rs/640/chocolate-chip-pudding-cookies-2.jpg
+	</ImageURL>
+	<Ingredients>
+		<Ingredient>
+			<Name>1 cup (2 sticks) Butter; softened</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>3/4 cup Brown Sugar</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1/4 cup White Sugar</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 small pkg Instant Vanilla Pudding mix</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>2 eggs</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 teaspoon Vanilla Extract</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>2 1/4 cups All-Purpose Flour</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 teaspoon Baking Soda</Name>
+		</Ingredient>
+		<Ingredient>
+			<Name>1 pkg ( 12 oz) Milk Chocolate Chips</Name>
+		</Ingredient>
+	</Ingredients>
+	<Instructions>
+		Preheat oven to 375 degrees. Beat the butter, both sugars, pudding mix, eggs and vanilla in a large bowl. Beat until creamy and fluffy. Then slowly mix in flour and baking soda. Stir in chocolate chips. Drop by tablespoonfuls, onto an ungreased cookie sheet. Bake for ONLY 9-10 minutes. Remove from oven and let cool about 10 minutes before eating.
+	</Instructions>
+</Recipe>
